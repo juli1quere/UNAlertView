@@ -25,16 +25,16 @@ class ViewController: UIViewController {
         
         let alertView = UNAlertView(title: "Jacobus Oud", message: "Am I an architect?")
         
-        alertView.messageAlignment = NSTextAlignment.Center
+        alertView.messageAlignment = NSTextAlignment.center
         alertView.buttonAlignment  = UNButtonAlignment.Horizontal
         
-        alertView.addButton("Yes", action: {
+        alertView.addButton(title: "Yes", action: {
             
             print("Yes action")
             
         })
         
-        alertView.addButton("No", action: {
+        alertView.addButton(title: "No", action: {
             
             print("No action")
             
@@ -52,28 +52,28 @@ class ViewController: UIViewController {
         alertView.titleFont   = UIFont(name: "Avenir-Next-Bold", size: 16)
         alertView.messageFont = UIFont(name: "Avenir-Next", size: 16)
         
-        alertView.messageAlignment = NSTextAlignment.Left
+        alertView.messageAlignment = NSTextAlignment.left
         alertView.buttonAlignment  = UNButtonAlignment.Vertical
         
-        alertView.addButton("I love Café de Unie.",
+        alertView.addButton(title: "I love Café de Unie.",
             backgroundColor: UIColor(white: 0.1, alpha: 1.0),
-            fontColor: UIColor.whiteColor(),
+            fontColor: UIColor.white,
             action: {
                 
                 print("I love Café de Unie.")
         })
         
-        alertView.addButton("I love Kiefhoek Housing",
+        alertView.addButton(title: "I love Kiefhoek Housing",
             backgroundColor: UIColor(white: 0.1, alpha: 1.0),
-            fontColor: UIColor.whiteColor(),
+            fontColor: UIColor.white,
             action: {
                 
                 print("I love Kiefhoek Housing")
         })
         
-        alertView.addButton("Sorry, I don't know anything.",
+        alertView.addButton(title: "Sorry, I don't know anything.",
             backgroundColor: UIColor(white: 0.1, alpha: 1.0),
-            fontColor: UIColor.whiteColor(),
+            fontColor: UIColor.white,
             action: {
                 
                 print("Sorry, I don't know amnything.")
